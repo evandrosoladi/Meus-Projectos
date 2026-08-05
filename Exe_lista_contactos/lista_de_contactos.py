@@ -120,6 +120,5 @@ def menu():
             case _:
                 print('Opcão inválida')
                 voltar_ao_menu()
-
-
-menu()
+if __name__ == "__main__":
+    menu()
