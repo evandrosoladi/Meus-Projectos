@@ -114,6 +114,9 @@ def voltar_ao_menu():
             return menu()
 
 def menu():
+    if not os.path.exists("tarefas.json"):
+        with open("tarefas.json", "w") as f:
+            json.dump([], f)
     limpar()
     desenhar_linha()
     print('BEM-VINDO A SUA AGENDA'.center(50))
