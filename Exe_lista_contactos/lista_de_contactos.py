@@ -26,7 +26,7 @@ def adicionar():
                 if pessoa["contacto"] == numero:
                     print("Esse número já existe.")
                     voltar_ao_menu()
-
+                    return
             contactos.append(novo_contacto)
             with open('contactos.json', 'w') as guardar:
                 json.dump(contactos, guardar, indent=4)
