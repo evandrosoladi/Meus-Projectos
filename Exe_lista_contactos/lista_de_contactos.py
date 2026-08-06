@@ -11,10 +11,10 @@ def adicionar():
         nome = str(input('Gravar como:'))
     except KeyboardInterrupt:
         print('\n\033[32mPreencha devidamente os campos!\033[m')
-        return 
+        voltar_ao_menu()
     except ValueError:
         print('\nNão esperávamos esse tipo de valor')
-        return 
+        voltar_ao_menu()
     else:
         with open('contactos.json') as lista_contactos:
             contactos = json.load(lista_contactos)
@@ -120,5 +120,6 @@ def menu():
             case _:
                 print('Opcão inválida')
                 voltar_ao_menu()
+
 if __name__ == "__main__":
     menu()
