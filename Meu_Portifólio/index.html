@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de técnico e estudante de informática">
+  <title>Portfólio | Técnico de Informática</title>
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+  <div class="estrutura-site">
+    <header class="barra-navegacao">
+      <a class="marca" href="#inicio">
+        <span class="marca-simbolo">ES<span></span></span>
+        <span class="nome-marca">EVANDRO SOLADI <small>| TÉCNICO E ESTUDANTE</small></span>
+      </a>
+      <nav class="links-navegacao">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#competencias">Competências</a>
+        <a href="#projetos">Projectos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="botao-menu" aria-label="Abrir menu">☰</button>
+    </header>
+
+    <main>
+      <section class="cabecalho-principal" id="inicio">
+        <div class="conteudo-principal">
+          <p class="subtitulo-destaque">TÉCNICO DE INFORMÁTICA • ESTUDANTE</p>
+          <h1>OLÁ, SOU O EVANDRO.<br>ESTUDANTE E TÉCNICO<br>DE INFORMÁTICA.</h1>
+          <p class="texto-destaque">Apaixonado por tecnologia, desenvolvimento, redes e soluções de TI. Actualmente construo projectos e desenvolvo competências para transformar problemas em soluções.</p>
+          <div class="acoes-destaque">
+            <a class="botao principal" href="#projetos">VER PROJECTOS</a>
+            <a class="botao contorno" href="#contacto">CONTACTO</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao" id="sobre">
+        <div class="cabecalho-secao"><span class="numero-secao">01</span><h2>SOBRE MIM</h2></div>
+        <div class="grelha-sobre">
+          <p>Sou estudante na área de Tecnologias da Informação, com interesse em desenvolvimento de software, redes, sistemas e cibersegurança. Gosto de aprender através de projectos práticos e transformar ideias em soluções funcionais.</p>
+          <p>Procuro evoluir continuamente, aprofundando conhecimentos em programação, infraestrutura e tecnologias web. O meu objectivo é construir uma carreira sólida na área de informática.</p>
+        </div>
+      </section>
+
+      <section class="secao" id="competencias">
+        <div class="cabecalho-secao"><span class="numero-secao">02</span><h2>COMPETÊNCIAS</h2></div>
+        <div class="grelha-competencias" id="grelha-competencias"></div>
+      </section>
+
+      <section class="secao" id="projetos">
+        <div class="cabecalho-secao"><span class="numero-secao">03</span><h2>MEUS PROJECTOS</h2></div>
+        <div class="grelha-projetos" id="grelha-projetos"></div>
+      </section>
+
+      <section class="secao" id="experiencia">
+        <div class="cabecalho-secao"><span class="numero-secao">04</span><h2>EXPERIÊNCIA</h2></div>
+        <div class="linha-tempo" id="linha-experiencias"></div>
+      </section>
+
+      <section class="secao secao-contacto" id="contacto">
+        <div class="cabecalho-secao"><span class="numero-secao">05</span><h2>CONTACTO</h2></div>
+        <div class="grelha-contacto">
+
+          <div class="informacoes-contacto">
+            <a href="mailto:evandrosoladi944@gmail.com">✉ evandrosoladi944@gmail.com</a>
+            <a href="https://www.linkedin.com/in/evandro-soladi-a7a37140a/">in LinkedIn</a>
+            <a href="https://github.com/evandrosoladi">◉ GitHub</a>
+            <p>📍 Luanda, Angola</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="ano-atual"></span> Evandro Soladi. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
